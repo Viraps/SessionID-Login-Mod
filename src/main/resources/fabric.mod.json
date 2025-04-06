@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "session-login-mod",
+	"version": "${version}",
+	"name": "Session Login Mod",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/session-login-mod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.viraps.SessionLoginMod"
+		],
+		"client": [
+			"com.viraps.SessionLoginModClient"
+		]
+	},
+	"mixins": [
+		"session-login-mod.mixins.json",
+		{
+			"config": "session-login-mod.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.16.12",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

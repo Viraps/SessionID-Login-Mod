@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "package": "com.viraps.mixin.client",
+  "compatibilityLevel": "JAVA_17",
+  "client": [
+    "ExampleClientMixin",
+    "MultiplayerScreenMixin",
+    "SessionMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+	}
+}
